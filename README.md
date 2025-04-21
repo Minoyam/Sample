@@ -57,7 +57,6 @@ domain/
 ```
 feature/
 ├─ ui/ (Compose Screen 및 ViewModel)
-└─ build.gradle.kts
 ```
 
 ### 1.7 `server`
