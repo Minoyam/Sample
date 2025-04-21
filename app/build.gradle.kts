@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.assignment"
+    namespace = "com.example.assignment.app"
     compileSdk = 35
 
     defaultConfig {
@@ -13,7 +13,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "dagger.hilt.android.testing.HiltTestRunner"
     }
 
     buildTypes {
@@ -28,4 +28,7 @@ android {
 }
 
 dependencies {
+    implementation(projects.data)
+    implementation(projects.feature.main)
+    implementation(projects.server)
 }
